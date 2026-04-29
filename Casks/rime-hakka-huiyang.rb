@@ -7,6 +7,8 @@ cask "rime-hakka-huiyang" do
   desc "Hakka (Huiyang dialect) input schema for Rime/Squirrel on macOS"
   homepage "https://github.com/Hydramus/rime-hakka"
 
+  depends_on cask: "squirrel-app"
+
   pkg "hakka-huiyang-rime-v#{version}.pkg"
 
   uninstall pkgutil: "im.rime.hakka.huiyang"
